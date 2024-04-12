@@ -126,7 +126,7 @@ export default function Home() {
           </Form>
         </FormProvider>
         { !errors.isValid && (
-          <div className='text-red-600 text-[32px] font-bold'>
+          <div data-testid="Error" className='text-red-600 text-[32px] font-bold'>
             Fill All the required fields
           </div>
         )}

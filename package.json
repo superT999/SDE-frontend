@@ -9,7 +9,8 @@
     "lint": "next lint",
     "eslint:check": "eslint --ext=.ts,.tsx .",
     "prettier:check": "prettier --check \"./**.{js,jsx,ts,tsx,css,json,md,yml}\" --no-error-on-unmatched-pattern",
-    "test:unit": "jest --coverage --passWithNoTests"
+    "test:unit": "jest --coverage --passWithNoTests",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@playwright/test": "^1.38.1",
@@ -33,6 +34,7 @@
     "lint-staged": "^14.0.1",
     "next": "13.4.19",
     "next-router-mock": "^0.9.13",
+    "playwright": "^1.43.0",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
