@@ -30,11 +30,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Next.js 14: Server actions
 - TypeScript
 - tailwind css
-- React Hook Form
-- React-toastify
+- React Hook Form for form validation
+- React-toastify for notification
 - AgGrid
-- Jest
-- Playwright
+- Jest for unit testing
+- Playwright for e2e testing
 
 ## Challenges
 - Next.js 14 new features including server actions and intercept routing
@@ -44,6 +44,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     - Famous for fast performance and a lot of customization features
     - Too complex configuration and spent much time on it
 - Configuration issue with Jest and Playwright
+
+## Testing
+- Unit test: run `yarn test:unit` testing result would be exported to `coverage`
+- E2E test: run `yarn test:e2e` testing report would be exported to `playwright-report`
 
 ## Screens
 - Login Page & Validation
