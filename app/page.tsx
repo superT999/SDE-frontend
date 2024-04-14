@@ -102,23 +102,23 @@ export default function Home() {
             <div className="flex text-center text-[40px] mb-10">Connect database...</div>
             <div className="flex flex-row items-center justify-between w-full mb-10">
               <label className="text-[32px]">User(*):</label>
-              <input className="text-[32px] required" value={userField.value} onChange={userField.onChange} required />
+              <input data-testid="User" className="text-[32px] required" value={userField.value} onChange={userField.onChange} required />
             </div>
             <div className="flex flex-row items-center justify-between w-full mb-10">
               <label className="text-[32px]">Password(*):</label>
-              <input type="password" className="text-[32px] required" value={passwordField.value} onChange={passwordField.onChange} required />
+              <input data-testid="Password" type="password" className="text-[32px] required" value={passwordField.value} onChange={passwordField.onChange} required />
             </div>
             <div className="flex flex-row items-center justify-between w-full mb-10">
               <label className="text-[32px]">Host(*):</label>
-              <input className="text-[32px] required" value={hostField.value} onChange={hostField.onChange} required />
+              <input data-testid="Host" className="text-[32px] required" value={hostField.value} onChange={hostField.onChange} required />
             </div>
             <div className="flex flex-row items-center justify-between w-full mb-10">
               <label className="text-[32px]">Port(*):</label>
-              <input type="number" min={0} className="text-[32px] required" value={portField.value} onChange={portField.onChange} required />
+              <input data-testid="Port" type="number" min={0} className="text-[32px] required" value={portField.value} onChange={portField.onChange} required />
             </div>
             <div className="flex flex-row items-center justify-between w-full mb-10">
               <label className="text-[32px]">Database(*):</label>
-              <input className="text-[32px] required" value={databaseField.value} onChange={databaseField.onChange} required />
+              <input data-testid="Database" className="text-[32px] required" value={databaseField.value} onChange={databaseField.onChange} required />
             </div>
             <div className="flex w-full">
               <button type="submit" className="m-auto w-[50%] text-center text-[32px] bg-slate-600 hover:bg-slate-800">Explore</button>
@@ -126,7 +126,7 @@ export default function Home() {
           </Form>
         </FormProvider>
         { !errors.isValid && (
-          <div className='text-red-600 text-[32px] font-bold'>
+          <div data-testid="Error" className='text-red-600 text-[32px] font-bold'>
             Fill All the required fields
           </div>
         )}
